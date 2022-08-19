@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box; 
+    font-size: 100%;
+ }
+ *, *::before, *::after {
+    box-sizing: inherit;
+ }
+ body {
+    font-family: 'rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+ }
+ main {
+    padding: 0;
+    margin: 0;
+ }
