@@ -1,3 +1,5 @@
+@import 'base';
+
 html {
     box-sizing: border-box; 
     font-size: 100%;
@@ -6,11 +8,55 @@ html {
     box-sizing: inherit;
  }
  body {
-    font-family: 'rubik', sans-serif;
+    font-weight: 300;
     padding: 0;
     margin: 0;
+    background-color: $body;
  }
- main {
-    padding: 0;
-    margin: 0;
+ p {
+   color: $Pale-text;
  }
+
+.box {
+   background-color: $card;
+}
+.flex {
+   background-color: $jeremy;
+}
+li {
+   color: $card-text;
+   font-weight: 400;
+}
+li:hover {
+   color: white;
+   cursor: pointer;
+}
+.card {
+   background-color: $card;
+}
+.history {
+   color: white;
+   padding: 16px 0;
+}
+
+.col:nth-child(1){
+   background-color: $work;
+}
+.col:nth-child(2) {
+   background-color: $play;
+}
+.col:nth-child(3) {
+   background-color: $study;
+}
+.col:nth-child(4) {
+   background-color: $exercise;
+}
+.col:nth-child(5) {
+   background-color: $social;
+}
+.col:nth-child(6) {
+   background-color: $self-care;
+}
+.ellipsis:hover {
+   cursor: pointer;
+}
