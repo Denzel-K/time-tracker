@@ -1,5 +1,9 @@
 main {
     padding-top: 60px;
+
+    @media(max-width:  780px) {
+        padding-top: 20px;
+    }
 }
 .container {
     display: flex;

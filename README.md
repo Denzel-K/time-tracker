@@ -9,7 +9,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
+  - [Built with](#built-with) 
  
 ## Overview
 
