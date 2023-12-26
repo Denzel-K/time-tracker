@@ -208,12 +208,10 @@ a {
       .grid .col .card .timeDisp {
         width: 100%;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center; }
         @media (max-width: 780px) {
-          .grid .col .card .timeDisp {
-            align-items: flex-start;
-            justify-content: center; } }
-        @media (max-width: 600px) {
           .grid .col .card .timeDisp {
             justify-content: space-between;
             align-items: center; } }
