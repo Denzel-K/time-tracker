@@ -10,16 +10,17 @@
 body {
   font-family: 'rubik', sans-serif; }
 
-@media (max-width: 425px) {
-  .attribute {
-    padding: 0 16px; } }
+.attribute {
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center; }
 
 p {
   font-family: 'anek telugu', sans-serif;
-  line-height: 16px; }
-  @media (max-width: 780px) {
-    p {
-      margin: 10px; } }
+  font-size: 1rem; }
   @media (max-width: 560px) {
     p {
       font-size: 14px; } }
@@ -31,10 +32,7 @@ h1 {
   color: white;
   font-size: 42px;
   font-weight: 300;
-  margin-bottom: 10px; }
-  @media (max-width: 780px) {
-    h1 {
-      margin: 0; } }
+  margin-top: 6px; }
   @media (max-width: 560px) {
     h1 {
       font-size: 32px; } }
@@ -159,14 +157,13 @@ a {
 .grid {
   display: grid;
   width: 78%;
-  padding: 30px 20px;
-  justify-content: space-around;
+  padding: 0 0 0 1.4rem;
   height: 100%;
   grid-gap: 1.4rem;
   grid-template-columns: 1fr 1fr 1fr; }
   @media (max-width: 780px) {
     .grid {
-      padding: 0;
+      padding: 1.4rem 0 0 0;
       grid-template-columns: 1fr 1fr;
       width: 100%; } }
   @media (max-width: 600px) {
