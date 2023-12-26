@@ -129,12 +129,6 @@ a {
         justify-content: space-between; } }
     .box .flex .jeremy {
       width: 80px; }
-      @media (max-width: 780px) {
-        .box .flex .jeremy {
-          width: 20%; } }
-      @media (max-width: 325px) {
-        .box .flex .jeremy {
-          width: 30%; } }
       .box .flex .jeremy img {
         width: 100%;
         border: 2px solid white;
