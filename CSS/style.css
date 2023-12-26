@@ -122,13 +122,14 @@ a {
       width: 100%;
       height: auto; } }
   .box .flex {
-    padding: 1rem;
+    padding: 2.4rem 1rem;
     border-radius: 16px;
     display: flex;
     flex-direction: column; }
     @media (max-width: 780px) {
       .box .flex {
         flex-direction: row;
+        padding: 1rem;
         justify-content: space-around;
         align-items: center;
         justify-content: center; } }
@@ -173,8 +174,8 @@ a {
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100%;
-    height: 200px; }
-    @media (max-width: 560px) {
+    height: 240px; }
+    @media (max-width: 600px) {
       .grid .col {
         width: 100%;
         height: 190px; } }
@@ -185,19 +186,23 @@ a {
     .grid .col .image img {
       float: right;
       width: 25%; }
-      @media (max-width: 560px) {
+      @media (max-width: 600px) {
         .grid .col .image img {
           width: 15%; } }
     .grid .col .card {
       position: absolute;
-      top: 20%;
-      height: 80%;
+      top: 15%;
+      height: 85%;
       width: 100%;
       padding: 20px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       flex-wrap: nowrap; }
+      @media (max-width: 780px) {
+        .grid .col .card {
+          top: 20%;
+          height: 80%; } }
       .grid .col .card .activity {
         width: 100%;
         display: flex;

@@ -36,15 +36,17 @@
 
 
     .flex {
-        padding: 1rem;
+        padding: 2.4rem 1rem;
         border-radius: 16px;
         display: flex;
+       
         flex-direction: column;
         //border: 2px solid white;
 
         
         @media (max-width: 780px) {
             flex-direction: row;
+            padding: 1rem;
             justify-content: space-around;
             align-items: center;
             justify-content: center;
@@ -111,9 +113,9 @@
         flex-direction: column;
         flex-wrap: nowrap;
         width: 100%;
-        height: 200px;
+        height: 240px;
 
-        @media (max-width: 560px) {
+        @media (max-width: 600px) {
             width: 100%;
             height: 190px;
         }
@@ -128,20 +130,25 @@
             float: right;
             width: 25%;
 
-            @media(max-width: 560px) {
+            @media(max-width: 600px) {
                 width: 15%;
             }
         }
         .card {
             position: absolute;
-            top: 20%;
-            height: 80%;
+            top: 15%;
+            height: 85%;
             width: 100%;
             padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             flex-wrap: nowrap;
+
+            @media(max-width: 780px){
+                top: 20%;
+                height: 80%;
+            }
 
             .activity {
                 width: 100%;
