@@ -134,7 +134,7 @@ body {
       .box .flex {
         justify-content: space-between; } }
     .box .flex .jeremy {
-      width: 30%; }
+      width: 80px; }
       @media (max-width: 780px) {
         .box .flex .jeremy {
           width: 20%; } }
@@ -143,7 +143,7 @@ body {
           width: 30%; } }
       .box .flex .jeremy img {
         width: 100%;
-        border: 4px solid red;
+        border: 2px solid white;
         border-radius: 50%; }
   .box .menu {
     padding: 20px; }
