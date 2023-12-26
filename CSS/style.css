@@ -37,10 +37,11 @@ h1 {
       margin: 0; } }
   @media (max-width: 560px) {
     h1 {
-      font-size: 36px; } }
+      font-size: 32px; } }
   @media (max-width: 425px) {
     h1 {
-      text-align: left; } }
+      text-align: left;
+      font-size: 28px; } }
 
 ul {
   align-self: center; }
@@ -105,6 +106,9 @@ a {
       width: auto;
       margin: auto; } }
 
+.container, .box, .grid {
+  border: 2px solid white; }
+
 .box {
   border-radius: 16px;
   display: flex;
@@ -148,6 +152,7 @@ a {
   display: grid;
   width: 78%;
   padding: 30px 20px;
+  justify-content: space-around;
   height: 100%;
   grid-gap: 1.4rem;
   grid-template-columns: 1fr 1fr 1fr; }
@@ -194,11 +199,24 @@ a {
       flex-direction: column;
       justify-content: space-around;
       flex-wrap: nowrap; }
-      .grid .col .card div {
+      .grid .col .card .activity {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: nowrap; }
+      .grid .col .card .timeDisp {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        @media (max-width: 780px) {
+          .grid .col .card .timeDisp {
+            align-items: flex-start;
+            justify-content: center; } }
+        @media (max-width: 600px) {
+          .grid .col .card .timeDisp {
+            justify-content: space-between;
+            align-items: center; } }
 
 /* Color variales*/
 html {
