@@ -1,19 +1,25 @@
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-gap: 1.4rem;
     padding: 1rem;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    // flex-direction: row;
+    // justify-content: space-around;
+    // align-items: center;
     width: 80%;
     margin: auto;
    
     @media (max-width: 780px) {
         padding: 1rem;
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         width: 100%;
         margin: auto;
+    }
+    @media(max-width: 475px){
+        padding: 0.8rem;
     }
 }
 
@@ -25,8 +31,9 @@
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    width: 25%;
-    height: 100%;
+    height: auto;
+    //width: 25%;
+    //height: 100%;
     
     @media (max-width: 780px) {
         width: 100%;
@@ -52,13 +59,13 @@
         }
 
         .jeremy {
-            width: 80px;
+            width: 85px;
 
             @media (max-width: 780px) {
-                width: 70px;
+                width: 75px;
             }
             @media (max-width: 325px) {
-                width: 65px;
+                width: 70px;
             }
 
             img {
@@ -87,9 +94,9 @@
 .grid {
     display: grid;
     width: 78%;
-    padding: 0 0 0 1.4rem;
+    //padding: 0 0 0 1.4rem;
     //justify-content: space-around;
-    height: 100%;
+    //height: 100%;
     grid-gap: 1.4rem;
     grid-template-columns: 1fr 1fr 1fr;
    

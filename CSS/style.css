@@ -15,15 +15,18 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center; }
+  @media (max-width: 780px) {
+    .attribute {
+      padding: 1rem 0 1rem 1.4rem; } }
 
 p {
   font-family: 'anek telugu', sans-serif;
   font-size: 1rem; }
   @media (max-width: 560px) {
     p {
-      font-size: 14px; } }
+      font-size: 16px; } }
   @media (max-width: 425px) {
     p {
       text-align: left; } }
@@ -31,8 +34,7 @@ p {
 h1 {
   color: white;
   font-size: 42px;
-  font-weight: 300;
-  margin-top: 6px; }
+  font-weight: 300; }
   @media (max-width: 560px) {
     h1 {
       font-size: 32px; } }
@@ -45,24 +47,20 @@ ul {
   align-self: center; }
 
 li {
-  font-size: 18px; }
-  @media (max-width: 1440px) {
-    li {
-      list-style: none;
-      display: block;
-      margin: 16px; } }
+  font-size: 18px;
+  list-style: none;
+  display: block;
+  margin: 16px; }
   @media (max-width: 780px) {
     li {
       display: inline-block;
       margin: 0 40px; } }
   @media (max-width: 560px) {
     li {
-      display: inline-block;
       margin: 0 20px; } }
   @media (max-width: 375px) {
     li {
-      display: inline-block;
-      margin: 0 10px; } }
+      margin: 0 12px; } }
 
 .activity {
   padding: 10px 6px; }
@@ -88,21 +86,24 @@ a {
   cursor: pointer; }
 
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-gap: 1.4rem;
   padding: 1rem;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   width: 80%;
   margin: auto; }
   @media (max-width: 780px) {
     .container {
       padding: 1rem;
+      display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       width: 100%;
       margin: auto; } }
+  @media (max-width: 475px) {
+    .container {
+      padding: 0.8rem; } }
 
 .container, .box, .grid {
   border: 2px solid white; }
@@ -111,8 +112,7 @@ a {
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  width: 25%;
-  height: 100%; }
+  height: auto; }
   @media (max-width: 780px) {
     .box {
       width: 100%;
@@ -132,13 +132,13 @@ a {
       .box .flex {
         justify-content: space-between; } }
     .box .flex .jeremy {
-      width: 80px; }
+      width: 85px; }
       @media (max-width: 780px) {
         .box .flex .jeremy {
-          width: 70px; } }
+          width: 75px; } }
       @media (max-width: 325px) {
         .box .flex .jeremy {
-          width: 65px; } }
+          width: 70px; } }
       .box .flex .jeremy img {
         width: 100%;
         border: 2px solid white;
@@ -157,8 +157,6 @@ a {
 .grid {
   display: grid;
   width: 78%;
-  padding: 0 0 0 1.4rem;
-  height: 100%;
   grid-gap: 1.4rem;
   grid-template-columns: 1fr 1fr 1fr; }
   @media (max-width: 780px) {

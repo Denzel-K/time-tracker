@@ -16,8 +16,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+
+    @media (max-width: 780px){
+        padding: 1rem 0 1rem 1.4rem;
+    }
 }
 
 p {
@@ -25,7 +29,7 @@ p {
     font-size: 1rem;
  
     @media(max-width: 560px) {
-        font-size: 14px;
+        font-size: 16px;
     }
     @media(max-width: 425px) {
         text-align: left;
@@ -35,7 +39,6 @@ p {
     color: white;
     font-size: 42px;
     font-weight: 300;
-    margin-top: 6px;
 
     @media(max-width: 560px) {
         font-size: 32px;
@@ -50,23 +53,19 @@ ul {
 }
 li {
     font-size: 18px;
+    list-style: none;
+    display: block;
+    margin: 16px;
 
-    @media (max-width: 1440px) {
-        list-style: none;
-        display: block;
-        margin: 16px;
-    }
     @media (max-width: 780px) {
         display: inline-block;
         margin: 0 40px;
     }
     @media (max-width: 560px) {
-        display: inline-block;
         margin: 0 20px;
     }
     @media (max-width: 375px) {
-        display: inline-block;
-        margin: 0 10px;
+        margin: 0 12px;
     }
 
 }
