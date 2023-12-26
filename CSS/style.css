@@ -91,7 +91,7 @@ a {
 
 .container {
   display: flex;
-  padding: 30px 10px;
+  padding: 1rem;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -103,7 +103,7 @@ a {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      width: auto;
+      width: 100%;
       margin: auto; } }
 
 .container, .box, .grid {
@@ -113,10 +113,12 @@ a {
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  width: 25%; }
+  width: 25%;
+  height: 100%; }
   @media (max-width: 780px) {
     .box {
-      width: 100%; } }
+      width: 100%;
+      height: auto; } }
   .box .flex {
     padding: 1rem;
     border-radius: 16px;
@@ -133,6 +135,12 @@ a {
         justify-content: space-between; } }
     .box .flex .jeremy {
       width: 80px; }
+      @media (max-width: 780px) {
+        .box .flex .jeremy {
+          width: 70px; } }
+      @media (max-width: 325px) {
+        .box .flex .jeremy {
+          width: 65px; } }
       .box .flex .jeremy img {
         width: 100%;
         border: 2px solid white;
@@ -158,6 +166,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr; }
   @media (max-width: 780px) {
     .grid {
+      padding: 0;
       grid-template-columns: 1fr 1fr;
       width: 100%; } }
   @media (max-width: 600px) {
@@ -213,6 +222,7 @@ a {
         justify-content: center; }
         @media (max-width: 780px) {
           .grid .col .card .timeDisp {
+            flex-direction: row;
             justify-content: space-between;
             align-items: center; } }
 
