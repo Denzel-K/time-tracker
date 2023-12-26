@@ -3,9 +3,6 @@
     grid-template-columns: 25% 1fr;
     grid-gap: 1.4rem;
     padding: 1rem;
-    // flex-direction: row;
-    // justify-content: space-around;
-    // align-items: center;
     width: 80%;
     margin: auto;
    
@@ -23,15 +20,12 @@
     }
 }
 
-.container, .box, .grid {
-    border: 2px solid white;
-}
 
 .box {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    height: auto;
+    //height: auto;
     //width: 25%;
     //height: 100%;
     
@@ -46,27 +40,28 @@
         border-radius: 16px;
         display: flex;
         flex-direction: column;
+        //border: 2px solid white;
 
         
         @media (max-width: 780px) {
-            display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            justify-content: center;
         }
         @media(max-width: 375px) {
             justify-content: space-between;
         }
 
         .jeremy {
-            width: 85px;
+            width: 90px;
 
-            @media (max-width: 780px) {
-                width: 75px;
-            }
-            @media (max-width: 325px) {
-                width: 70px;
-            }
+            // @media (max-width: 780px) {
+            //     width: 75px;
+            // }
+            // @media (max-width: 325px) {
+            //     width: 70px;
+            // }
 
             img {
                 width: 100%;
@@ -93,15 +88,11 @@
 
 .grid {
     display: grid;
-    width: 78%;
-    //padding: 0 0 0 1.4rem;
-    //justify-content: space-around;
-    //height: 100%;
+
     grid-gap: 1.4rem;
     grid-template-columns: 1fr 1fr 1fr;
    
     @media (max-width: 780px) {
-        padding: 1.4rem 0 0 0;
         grid-template-columns: 1fr 1fr;
         width: 100%;
     }
@@ -109,7 +100,6 @@
         grid-gap: 1.4rem;
         grid-template-columns: 1fr;
         width: 100%;
-        padding: 1.8rem 0;
     }
 
     .card, .image, .col {
