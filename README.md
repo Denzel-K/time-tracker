@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/responsive-time-tracking-dashboard-interactive-with-json-data-Uoy6GbTBTQ)
 
 ## My process
 
